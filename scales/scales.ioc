@@ -1,7 +1,7 @@
 #MicroXplorer Configuration settings - do not modify
 File.Version=6
 KeepUserPlacement=false
-LCD.Contrast=LCD_CONTRASTLEVEL_1
+LCD.Contrast=LCD_CONTRASTLEVEL_5
 LCD.DeadTime=LCD_DEADTIME_0
 LCD.Divider=LCD_DIVIDER_21
 LCD.HighDrive=LCD_HIGHDRIVE_1

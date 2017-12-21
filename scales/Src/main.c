@@ -119,7 +119,9 @@ int main(void)
     uint8_t ones = 10;
     uint8_t decimal = 0;
 
-   Screen_Update(&hlcd, hundreds, tens, ones, decimal);
+   //Screen_Update(&hlcd, hundreds, tens, ones, decimal);
+
+   Screen_Update(&hlcd, 8, 8, 8, 2);
 
   /* USER CODE END 2 */
 
@@ -130,41 +132,41 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-      HAL_Delay(1000);
-
-      decimal++;
-      if (decimal > 9) {
-          decimal = 0;
-          if (ones == 10) {
-              ones = 1;
-          } else {
-              ones++;
-          }
-          if (ones > 9) {
-              ones = 0;
-              if (tens == 10) {
-                  tens = 1;
-              } else {
-                  tens++;
-              }
-              if (tens > 9) {
-                  tens = 0;
-                  if (hundreds == 10) {
-                      hundreds = 1;
-                  } else {
-                      hundreds++;
-                  }
-                  if (hundreds > 9) {
-                      hundreds = 10;
-                      tens = 10;
-                      ones = 10;
-                      decimal = 0;
-                  }
-              }
-          }
-      }
-
-      Screen_Update(&hlcd, hundreds, tens, ones, decimal);
+//      HAL_Delay(1000);
+//
+//      decimal++;
+//      if (decimal > 9) {
+//          decimal = 0;
+//          if (ones == 10) {
+//              ones = 1;
+//          } else {
+//              ones++;
+//          }
+//          if (ones > 9) {
+//              ones = 0;
+//              if (tens == 10) {
+//                  tens = 1;
+//              } else {
+//                  tens++;
+//              }
+//              if (tens > 9) {
+//                  tens = 0;
+//                  if (hundreds == 10) {
+//                      hundreds = 1;
+//                  } else {
+//                      hundreds++;
+//                  }
+//                  if (hundreds > 9) {
+//                      hundreds = 10;
+//                      tens = 10;
+//                      ones = 10;
+//                      decimal = 0;
+//                  }
+//              }
+//          }
+//      }
+//
+//      Screen_Update(&hlcd, hundreds, tens, ones, decimal);
   }
   /* USER CODE END 3 */
 

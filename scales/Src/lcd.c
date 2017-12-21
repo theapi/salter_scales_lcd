@@ -58,7 +58,7 @@ void MX_LCD_Init(void)
   hlcd.Init.Duty = LCD_DUTY_1_4;
   hlcd.Init.Bias = LCD_BIAS_1_3;
   hlcd.Init.VoltageSource = LCD_VOLTAGESOURCE_INTERNAL;
-  hlcd.Init.Contrast = LCD_CONTRASTLEVEL_1;
+  hlcd.Init.Contrast = LCD_CONTRASTLEVEL_5;
   hlcd.Init.DeadTime = LCD_DEADTIME_0;
   hlcd.Init.PulseOnDuration = LCD_PULSEONDURATION_1;
   hlcd.Init.HighDrive = LCD_HIGHDRIVE_1;

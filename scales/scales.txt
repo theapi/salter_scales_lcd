@@ -1,6 +1,6 @@
 Configuration	scales
 STM32CubeMX 	4.23.0
-Date	10/26/2017
+Date	10/28/2017
 MCU	STM32L053C8Tx
 
 
